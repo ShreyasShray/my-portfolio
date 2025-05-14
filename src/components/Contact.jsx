@@ -20,9 +20,9 @@ export default function Contact() {
 				Get In Touch
 			</Typography>
 			<Typography variant="body1" mb={2}>
-				Drop me a message at <strong>shreyas@email.com</strong>
+				Drop me a message at <strong>shreyasshray94308@email.com</strong>
 			</Typography>
-			<Button variant="contained" href="mailto:shreyas@email.com">
+			<Button variant="contained" href="mailto:shreyasshray94308@email.com">
 				Say Hello
 			</Button>
 		</Box>
