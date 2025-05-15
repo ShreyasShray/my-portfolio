@@ -11,7 +11,13 @@ import {
 
 export default function Projects() {
   return (
-    <Box sx={{ textAlign: 'center', py: 6 }}>
+    <Box 
+      id="projects"
+      sx={{ 
+        textAlign: 'center', 
+        py: 6,
+        backgroundColor:'#F7F197'
+      }}>
       <Typography variant="h2" fontWeight="bold">My Projects</Typography>
       <Grid container spacing={4} sx={{ px: 4, py: 8 }}>
         {[].map((id) => (

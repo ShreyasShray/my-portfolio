@@ -7,7 +7,13 @@ import {
 
 export default function Skills() {
   return (
-    <Box sx={{ textAlign: 'center', py: 6 }}>
+    <Box 
+      id="skills"
+      sx={{ 
+        textAlign: 'center', 
+        py: 6,
+        backgroundColor:'#F7F197'
+    }}>
       <Typography variant="h4" gutterBottom>Skills</Typography>
       <Grid container spacing={3} justifyContent="center" mt={2}>
         {[
