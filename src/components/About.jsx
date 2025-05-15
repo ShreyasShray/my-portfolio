@@ -8,7 +8,7 @@ export default function About() {
       <Grid container spacing={4} alignItems="center" sx={{ 
         px: 4, 
         py: 8, 
-        backgroundColor:'#F7F197',
+        backgroundColor:'#FBF8CC',
       }}>
         <Grid item xs={12} md={4}>
           <Avatar

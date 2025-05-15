@@ -17,7 +17,7 @@ const Header = () => {
     <>
       <Box
         sx={{
-          backgroundColor:'#F7F197',
+          backgroundColor:'#FBF8CC',
           width:'100%',
           display:'flex',
           flexDirection:isMobile?'column':'row',

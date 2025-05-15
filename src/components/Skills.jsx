@@ -12,7 +12,7 @@ export default function Skills() {
       sx={{ 
         textAlign: 'center', 
         py: 6,
-        backgroundColor:'#F7F197'
+        backgroundColor:'#FBF8CC'
     }}>
       <Typography variant="h4" gutterBottom>Skills</Typography>
       <Grid container spacing={3} justifyContent="center" mt={2}>
