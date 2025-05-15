@@ -22,6 +22,7 @@ export default function Hero() {
         bgcolor: '#f5f5f5',
         textAlign: 'center',
         px: 2,
+        backgroundColor:'#F7F197'
       }}
     >
       <Typography variant="h2" fontWeight={700}>

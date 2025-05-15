@@ -10,7 +10,7 @@ export default function Contact() {
 			id="contact"
 			name="contact"
 			sx={{
-				bgcolor: '#e0f7fa',
+				backgroundColor:'#F7F197',
 				textAlign: 'center',
 				py: 8,
 				px: 2,
