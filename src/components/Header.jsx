@@ -27,9 +27,9 @@ const Header = () => {
         }}
       >
         <Box sx={{
-          paddingLeft:isMobile?'0':'3rem'
+          paddingLeft:isMobile?'0':'4rem'
         }}>
-          <Typography color='#03045E'  variant='h5' fontWeight={'bold'}>Shreyas Shray</Typography>
+          <Typography color='#03045E'  variant='h5' fontWeight={'none'}>Shreyas Shray</Typography>
         </Box>
         <Box sx={{
           display:'flex',
@@ -39,17 +39,17 @@ const Header = () => {
         }}>
           <Box>
             <Link to="about" smooth={true} duration={800}>
-              <Button color='#03045E' sx={{fontWeight:'590'}} variant="text">About</Button>
+              <Button sx={{fontWeight:'590', color:"#03045E"}} variant="text">About</Button>
             </Link>
           </Box>
           <Box>
             <Link to="projects" smooth={true} duration={800}>
-              <Button color='#03045E' sx={{fontWeight:'590'}} variant="text">Projects</Button>
+              <Button sx={{fontWeight:'590', color:"#03045E"}} variant="text">Projects</Button>
             </Link>
           </Box>
           <Box>
             <Link to="skills" smooth={true} duration={800}>
-              <Button color='#03045E' sx={{fontWeight:'590'}} variant="text">Skills</Button>
+              <Button sx={{fontWeight:'590', color:"#03045E"}} variant="text">Skills</Button>
             </Link>
           </Box>
         </Box>
@@ -58,7 +58,7 @@ const Header = () => {
           flexDirection:'row',
           justifyContent:'space-around',
           width:'6rem',
-          paddingRight:'3rem'
+          paddingRight:'4rem'
         }}>
           <Box>
             <IconButton 
@@ -66,7 +66,7 @@ const Header = () => {
                 window.open("https://www.linkedin.com/in/shreyas-shray-8535b8228", "_blank")
               }}
             >
-              <LinkedInIcon/>
+              <LinkedInIcon sx={{color:'#03045E'}} />
             </IconButton>
           </Box>
           <Box>
@@ -75,7 +75,7 @@ const Header = () => {
                 window.open("https://github.com/ShreyasShray", "_blank")
               }}
             >
-              <GitHubIcon/>
+              <GitHubIcon sx={{color:'#03045E'}} />
             </IconButton>
           </Box>
           <Box>
@@ -84,7 +84,7 @@ const Header = () => {
                 window.open("https://www.instagram.com/shreyas_shray/", "_blank")
               }}
             >
-              <InstagramIcon/>
+              <InstagramIcon sx={{color:'#03045E'}} />
             </IconButton>
           </Box>
         </Box>
