@@ -23,6 +23,8 @@ import muiImg from '../assets/mui.png';
 import javaImg from '../assets/java.png';
 import cImg from '../assets/c.png';
 import cppImg from '../assets/cpp.png';
+import postmanImg from '../assets/postman.png';
+import appwriteImg from '../assets/appwrite.png';
 
 export default function Skills() {
   return (
@@ -54,8 +56,10 @@ export default function Skills() {
         <img src={cssImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
         <img src={jsImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
         <img src={reactImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={nodejsImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
         <img src={expressImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
+        <img src={nodejsImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
+        <img src={postmanImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
+        <img src={appwriteImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
         <img src={gitImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
         <img src={githubImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
         <img src={cImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
