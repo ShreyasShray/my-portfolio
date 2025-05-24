@@ -32,7 +32,7 @@ export default function Hero() {
         sx={{
           display:'flex',
           width:'80%',
-          flexDirection:useMediaQuery('(max-width:980px)')?'column':'row',
+          flexDirection:useMediaQuery('(max-width:1024px)')?'column':'row',
           justifyContent:'space-between',
         }}
       >
