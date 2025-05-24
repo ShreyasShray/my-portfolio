@@ -25,6 +25,26 @@ import cImg from '../assets/c.png';
 import cppImg from '../assets/cpp.png';
 import postmanImg from '../assets/postman.png';
 import appwriteImg from '../assets/appwrite.png';
+import './Skills.css';
+
+
+const CustomCard = ({url, title}) => {
+  return (
+    <Box className='skill-card'>
+      <Box className='card-img-box'>
+        <img src={url}/>
+      </Box>
+      <Box>
+        {useMediaQuery('(max-width:600px)')?
+        (<Typography variant='caption'>
+          {title}
+        </Typography>):(<Typography variant='body2'>
+          {title}
+        </Typography>)}
+      </Box>
+    </Box>
+  );
+}
 
 export default function Skills() {
   return (
@@ -37,7 +57,7 @@ export default function Skills() {
         justifyContent: 'center',
         minHeight: '100vh',
         bgcolor: '#f5f5f5',
-        textAlign: 'center',
+        textAlign: 'center', 
         px: 2,
         backgroundColor:'#FBF8CC'
     }}>
@@ -49,29 +69,32 @@ export default function Skills() {
       <Box
         sx={{
           width:'70%',
-          marginTop:'2rem'
+          marginTop:'2rem',
+          display:'flex',
+          flexWrap:'wrap',
+          justifyContent:'center'
         }}
       >
-        <img src={htmlImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={cssImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={jsImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={reactImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={expressImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={nodejsImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={postmanImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={appwriteImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={gitImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={githubImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={cImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={cppImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={javaImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={pythonImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={muiImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={bootstrapImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={vercelImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={arduinoImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={iotImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
-        <img src={chatgptImg} style={{width:useMediaQuery('(max-width:600px)')?'2.5rem':'4rem', height:'auto', margin:'0.6rem'}} />
+        <CustomCard url={htmlImg} title={"HTML"} />
+        <CustomCard url={cssImg} title={"CSS"} />
+        <CustomCard url={jsImg} title={"JavaScript"} />
+        <CustomCard url={reactImg} title={"React"} />
+        <CustomCard url={expressImg} title={"Express"} />
+        <CustomCard url={nodejsImg} title={"Nodejs"} />
+        <CustomCard url={postmanImg} title={"Postman"} />
+        <CustomCard url={appwriteImg} title={"Appwrite"} />
+        <CustomCard url={gitImg} title={"Git"} />
+        <CustomCard url={githubImg} title={"Github"} />
+        <CustomCard url={cImg} title={"C"} />
+        <CustomCard url={cppImg} title={"C++"} />
+        <CustomCard url={javaImg} title={"Java"} />
+        <CustomCard url={pythonImg} title={"Python"} />
+        <CustomCard url={muiImg} title={"MUI"} />
+        <CustomCard url={bootstrapImg} title={"BootStrap"} />
+        <CustomCard url={vercelImg} title={"Vercel"} />
+        <CustomCard url={arduinoImg} title={"Arduino"} />
+        <CustomCard url={iotImg} title={"IOT"} />
+        <CustomCard url={chatgptImg} title={"ChatGPT"} />
       </Box>
     </Box>
   );
