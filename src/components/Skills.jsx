@@ -25,6 +25,7 @@ import cImg from '../assets/c.png';
 import cppImg from '../assets/cpp.png';
 import postmanImg from '../assets/postman.png';
 import appwriteImg from '../assets/appwrite.png';
+import solidworksImg from '../assets/solidworks.png';
 import './Skills.css';
 
 
@@ -95,6 +96,7 @@ export default function Skills() {
         <CustomCard url={arduinoImg} title={"Arduino"} />
         <CustomCard url={iotImg} title={"IOT"} />
         <CustomCard url={chatgptImg} title={"ChatGPT"} />
+        <CustomCard url={solidworksImg} title={"SolidWorks"} />
       </Box>
     </Box>
   );
